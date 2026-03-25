@@ -15,21 +15,21 @@ A single-page web application that displays information about 10 major U.S. citi
 
 ## Features Implemented
 
-✓ **Location Data Model** — `Location` class stores city name, latitude, and longitude  
-✓ **Dynamic UI Creation** — Buttons generated using `document.createElement()` and `appendChild()`  
-✓ **Event Handling** — Click listeners on city buttons using `addEventListener()`  
-✓ **Location Display** — Shows city name with coordinates when button is clicked  
-✓ **Click History Tracking** — `History` class maintains order and count of clicked cities  
-✓ **Active Button State** — Only one button active at a time with visual styling  
-✓ **Code Organization** — Separated models, UI logic, and event handlers for maintainability  
-✓ **Best Practices** — Strict mode, PascalCase files for classes, descriptive naming, single-responsibility functions
+**Location Data Model** — `Location` class stores city name, latitude, and longitude  
+**Dynamic UI Creation** — Buttons generated using `document.createElement()` and `appendChild()`  
+**Event Handling** — Click listeners on city buttons using `addEventListener()`  
+**Location Display** — Shows city name with coordinates when button is clicked  
+**Click History Tracking** — `History` class maintains order and count of clicked cities  
+**Active Button State** — Only one button active at a time with visual styling  
+**Code Organization** — Separated models, UI logic, and event handlers for maintainability  
+**Best Practices** — Strict mode, PascalCase files for classes, descriptive naming, single-responsibility functions
 
 ## Project Structure
 src/  
 ├── index.html # Home page (SPA)  
 ├── css/  
-│ └── styles.css # Any custom styling  
-├── js/
+│── styles.css # Any custom styling  
+├─ └─ js/
 │ ├── General.js # Global imports (Bootstrap, Custom CSS)  
 │ ├── Home.js # Main controller and event handling  
 │ ├── Location.js # Location data model  
