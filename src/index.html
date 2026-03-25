@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location App</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
@@ -14,13 +15,20 @@
         </nav>
     </header>
 
-    <main class="container mt-5">
-        <h1>Welcome</h1>
-        <p>This is your home page.</p>
-    </main>
-
-    <footer class="bg-light text-center py-3 mt-5">
-        <p>&copy; 2026 Location App. All rights reserved.</p>
-    </footer>
+    <div class="container mt-5">
+        <h1>U.S. Cities</h1>
+        
+        <div id="buttons-container" class="mb-4">
+            <!-- Buttons will be created here and injected via home.js -->
+        </div>
+        
+        <div id="location-info" class="alert alert-info">
+            Click a city button to see its location
+        </div>
+        
+        <div id="history" class="mt-4">
+            Clicked: 
+        </div>
+    </div>
 </body>
 </html>

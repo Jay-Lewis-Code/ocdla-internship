@@ -14,7 +14,8 @@ module.exports = (env, argv) =>
     // stats: 'verbose',
     mode: !isProduction ? 'development' : 'production',
     entry: {
-      home: './src/js/home.js',
+      home: './src/js/Home.js',
+      
     },
     output: {
       path: path.resolve(__dirname, "dist"),
@@ -47,6 +48,11 @@ module.exports = (env, argv) =>
         },
       ],
     },
+    // /* enforce case-sensitive file resolution for Windows */
+    // resolve: {
+    //   symlinks: false,
+    //   caseSensitiveOnly: true
+    // },
     plugins: [
       new htmlWebpackPlugin({
         template: path.resolve(__dirname, "./src/index.html"),
