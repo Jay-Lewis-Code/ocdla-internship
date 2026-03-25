@@ -1,3 +1,5 @@
+"use strict";
+
 /*
   Jason Lewis
   CS280 Internship
