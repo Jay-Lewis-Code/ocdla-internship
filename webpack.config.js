@@ -14,7 +14,7 @@ module.exports = (env, argv) =>
     // stats: 'verbose',
     mode: !isProduction ? 'development' : 'production',
     entry: {
-      home: './src/js/Home.js',
+      home: './src/client/index.js',
       
     },
     output: {
