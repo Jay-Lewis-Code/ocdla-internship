@@ -25,7 +25,7 @@ A single-page web application that displays information about 10 major U.S. citi
 ✓ **Best Practices** — Strict mode, PascalCase files for classes, descriptive naming, single-responsibility functions
 
 ## Project Structure
-src/
+src/  
 ├── index.html # Home page (SPA)  
 ├── css/  
 │ └── styles.css # Any custom styling  
