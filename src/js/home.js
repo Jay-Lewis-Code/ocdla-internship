@@ -47,7 +47,7 @@ function getHistoryText(clicks) {
 }
 
 /**
-  Updates the active button styling and removes previous active state
+  Updates the class info for clicked buttons to visually show active button state.
   @param {HTMLElement} button - The button element to set as active
 */
 function setActiveButton(button) {
@@ -82,7 +82,7 @@ function updateHistoryDisplay() {
 function createCityButton(location) {
   const button = document.createElement('button');
   button.textContent = location.name;
-  button.className = 'btn btn-primary';
+  button.className = 'btn btn-outline-info text-dark';
   button.addEventListener('click', () => handleButtonClick(button, location));
   return button;
 }
