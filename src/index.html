@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location App</title>
-    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Location App</a>
+                <a class="navbar-brand fw-bold" href="index.html">Home</a>
             </div>
         </nav>
     </header>
 
-    <div class="container mt-5">
-        <h1>U.S. Cities</h1>
+    <div class="container mt-5 mb-5">
+        <h1 class="text-primary mb-4 fw-bold">Here's our list of city locations!</h1>
         
-        <div id="buttons-container" class="mb-4">
+        <div id="buttons-container" class="mb-4 d-flex flex-wrap gap-2">
             <!-- Buttons will be created here and injected via home.js -->
         </div>
         
-        <div id="location-info" class="alert alert-info">
-            Click a city button to see its location
+        <div id="location-info" class="alert alert-info alert-dismissible fade show" role="alert">
+            Click a city button to see location coordinates here!
         </div>
         
-        <div id="history" class="mt-4">
-            Clicked: 
+        <div class="card mt-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">Click History</h5>
+            </div>
+            <div class="card-body">
+                <p id="history" class="mb-0">
+                    <small class="text-muted"><span class="fw-bold">So far you've clicked: </span></small>
+                </p>
+            </div>
         </div>
     </div>
 </body>
