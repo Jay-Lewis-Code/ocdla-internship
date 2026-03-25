@@ -81,7 +81,9 @@ function updateHistoryDisplay() {
 */
 function createCityButton(location) {
   const button = document.createElement('button');
-  button.textContent = location.name;
+  // Instructions are to use .createTextNode instead of textContent
+  const textNode = document.createTextNode(location.name);
+  button.appendChild(textNode);
   button.className = 'btn btn-outline-info text-dark';
   button.addEventListener('click', () => handleButtonClick(button, location));
   return button;
