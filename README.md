@@ -26,15 +26,15 @@ A single-page web application that displays information about 10 major U.S. citi
 
 ## Project Structure
 src/
-├── index.html # Home page (SPA)
-├── css/
-│ └── styles.css # Any custom styling
+├── index.html # Home page (SPA)  
+├── css/  
+│ └── styles.css # Any custom styling  
 ├── js/
-│ ├── General.js # Global imports (Bootstrap, Custom CSS)
-│ ├── Home.js # Main controller and event handling
-│ ├── Location.js # Location data model
-│ └── History.js # History tracking model
-└── assets/ # Empty for now
+│ ├── General.js # Global imports (Bootstrap, Custom CSS)  
+│ ├── Home.js # Main controller and event handling  
+│ ├── Location.js # Location data model  
+│ └── History.js # History tracking model  
+└── assets/ # Empty for now  
 
 ## Technologies Used
 - **ES6 Modules** — Modular JavaScript with import/export
