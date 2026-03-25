@@ -19,12 +19,12 @@ const LOCATIONS = [
   new Location('Los Angeles', 34.1141, -118.4068),
   new Location('Chicago', 41.8375, -87.6866),
   new Location('Houston', 29.7860, -95.3885),
-  new Location('Phoenix', 33.5722, -112.0892),
-  new Location('Philadelphia', 40.0077, -75.1339),
-  new Location('San Antonio', 29.4632, -98.5238),
-  new Location('San Diego', 32.8313, -117.1222),
-  new Location('Dallas', 32.7935, -96.7667),
-  new Location('San Jose', 37.3012, -121.8480)
+  new Location('Miami', 25.7840, -80.2101),
+  new Location('Boston', 42.3188, -71.0852),
+  new Location('Washington', 38.9047, -77.0163),
+  new Location('San Francisco', 37.7558, -122.4449),
+  new Location('Seattle', 47.6211, -122.3244),
+  new Location('Denver', 39.7620, -104.8758)
 ];
 
 const history = new History();
