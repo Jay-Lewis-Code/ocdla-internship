@@ -82,7 +82,7 @@ function updateHistoryDisplay() {
 function createCityButton(location) {
   const button = document.createElement('button');
   button.textContent = location.name;
-  button.className = 'city-btn';
+  button.className = 'btn btn-primary';
   button.addEventListener('click', () => handleButtonClick(button, location));
   return button;
 }
