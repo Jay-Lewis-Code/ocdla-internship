@@ -18,7 +18,8 @@ class Location {
     @TODO - Add in more information about the location?
             Anything else we want to store/use?
   */
-  constructor(name, lat, lng) {
+  constructor(id, name, lat, lng) {
+    this.id = id;
     this.name = name;
     this.lat = lat;
     this.lng = lng;
