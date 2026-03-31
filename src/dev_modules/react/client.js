@@ -6,13 +6,13 @@ export function getState(key) {
   return state[key];
 }
 
-// call first to inject 
+// Updates the state object AND immediately calls _render() to update the UI
 export function setState(key, val) {
   state[key] = val;
-  _render();
+  _render(); // Automatically re-renders after state change
 }
 
-// render function
+// render function 
 export default function render(root, Component) {
   // functions are first class data types and this has already been defined on index.js
   _render = function _render() {

@@ -1,11 +1,11 @@
-import { setState } from '../dev_modules/react/client.js';
+
 
 /**
   Creates a button element for a city location
   @param {string} label - The location object which the button needs to be made for
   @returns {HTMLElement} - A button element with click handler attached (injected)
 */
-function Button(label, id, active=false) {
+function Button(label, id, onclick, active=false) {
   // short circuit operation
   // this works towards domain labels
   // blank button does no good
@@ -25,10 +25,7 @@ function Button(label, id, active=false) {
   }
 
   // Because we want the 
-  button.addEventListener('click', (e) => {
-    let target = e.target;
-    setState('activeCityId', target.id)
-  });
+  button.addEventListener('click', onclick);
 
   return button;
 }

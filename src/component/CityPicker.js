@@ -1,4 +1,5 @@
 import Button from './Button.js';
+import { setState } from '../dev_modules/react/client.js';
 
 // Do we want to rename cities to label?
 // Call key as key?
@@ -7,12 +8,18 @@ function CityPicker(cities, activeCityId) {
     buttonsContainer.id = 'buttons-container';
     
     buttonsContainer.setAttribute('class', 'mb-4 d-flex flex-wrap gap-2');
-    
+
+    // the citypicker knows what to do
+    let myFunction = (e) => {
+        let target = e.target;
+        setState('activeCityId', target.id)
+    };
+
     for (const id in cities) {
         let city = cities[id];
         // boolean expression
         let isActive = activeCityId == city.id;
-        const button = Button(city.name, city.id, isActive);
+        const button = Button(city.name, city.id, myFunction, isActive);
         buttonsContainer.appendChild(button);
     }
 
