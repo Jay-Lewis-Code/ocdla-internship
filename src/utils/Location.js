@@ -1,13 +1,4 @@
-"use strict";
-
-/*
-  Jason Lewis
-  CS280 Internship
-  Week 0: Longitude & Latitude Exercise
-
-  JS for the Location class
-*/
-
+import StringUtils from './StringUtils.js';
 
 // Location class to store city information
 class Location {
@@ -18,8 +9,8 @@ class Location {
     @TODO - Add in more information about the location?
             Anything else we want to store/use?
   */
-  constructor(id, name, lat, lng) {
-    this.id = id;
+  constructor(name, lat, lng) {
+    this.id = StringUtils.toId(name);
     this.name = name;
     this.lat = lat;
     this.lng = lng;

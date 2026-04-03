@@ -3,7 +3,7 @@ import { setState } from '../dev_modules/react/client.js';
 
 // Do we want to rename cities to label?
 // Call key as key?
-function CityPicker(cities, activeCityId) {
+export default function CityPicker(cities, activeCityId) {
     const buttonsContainer = document.createElement('div');
     buttonsContainer.id = 'buttons-container';
     
@@ -26,4 +26,10 @@ function CityPicker(cities, activeCityId) {
     return buttonsContainer;
 }
 
-export default CityPicker;
+// function clickHistory(e, city) {
+//     let target = e.target
+//     const historyEvent = new CustomEvent("logCity", {detail: {name: city.name}});
+//     document.dispatchEvent(historyEvent);
+//     setState("activeCityId", target.id)
+// }
+

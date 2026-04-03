@@ -1,5 +1,3 @@
-
-
 /**
   Creates a button element for a city location
   @param {string} label - The location object which the button needs to be made for
